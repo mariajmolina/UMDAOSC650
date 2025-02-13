@@ -1,4 +1,4 @@
-name: keras-tf
+name: keras-tf-2025
 channels:
   - anaconda
   - conda-forge
