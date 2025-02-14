@@ -5,9 +5,11 @@ The course syllabus is available [here](https://docs.google.com/viewer?url=https
 
 ## Installing repository locally
 
-The repository can be downloaded locally using ``git`` on your terminal:
+To use this repository for the course, fork your own copy of the repository.
 
-``git clone https://github.com/mariajmolina/UMDAOSC650.git``
+Then, your fork of the repository can be downloaded to your local machine using ``git`` on your terminal:
+
+``git clone https://github.com/$YOUR_GITHUB_USERNAME$/UMDAOSC650.git``
 
 To install the necessary python environment, using the provided yaml file is strongly recommended. 
 
