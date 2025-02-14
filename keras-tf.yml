@@ -7,15 +7,19 @@ channels:
 dependencies:
   - cartopy=0.24.0
   - dask=2025.1.0
+  - geos=3.13.0
   - ipykernel=6.29.5
   - ipython=8.32.0
-  - jupyter=1.1.1
+  - keras=3.8.0
   - matplotlib=3.10.0
   - netcdf4=1.7.2
-  - pip=25.0.1
+  - proj=9.5.1
+  - pyproj=3.7.0
+  - pyshp=2.3.1
   - python=3.12.8
-  - xarray=2025.1.2
+  - shapely=2.0.7
   - scikit-learn=1.6.1
   - scipy=1.15.1
-  - keras=3.8.0
+  - sqlite=3.48.0
   - tensorflow=2.18.0
+  - xarray=2025.1.2
