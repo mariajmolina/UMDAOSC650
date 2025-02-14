@@ -20,3 +20,7 @@ Run the following command from within the ``UMDAOSC650`` directory to install:
 Once installed, the python environment can be activated by running:
 
 ``conda activate keras-tf-v2025``
+
+To deactivate the python environment, run:
+
+``conda deactivate``
