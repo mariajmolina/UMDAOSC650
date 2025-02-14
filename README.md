@@ -1,6 +1,12 @@
 # UMDAOSC650
 University of Maryland's AOSC 650 course: Neural Networks for the Physical Sciences
 
+In this course, we will learn the fundamentals of neural networks,
+from the basics of a neuron to more advanced architectures, and how these tools can be applied to
+the physical sciences. Important considerations for data preprocessing specific to the physical
+sciences will be discussed, along with how to evaluate the skill, uncertainty, and confidence of neural
+networks with specific relevance to the physical sciences.
+
 The course syllabus is available [here](https://docs.google.com/viewer?url=https://docs.google.com/document/d/1-sdX_Ngq0N21pWYkajzWeO2eLgn-sFBkEOLWvZ6-wQI/export?format=pdf).
 
 ## Installing repository locally
