@@ -30,9 +30,9 @@ Grading Rubric:
 4. Explanation and justification of your NN skill assessment (e.g., properly assessing skill of classification or regression NN, skill assessment of class imbalance situations, are your clusters meaningful?).
 5. Explanation of what your NN learned (e.g., test data/prediction visualization, explainable AI methods).
 
-What if my NN never learns??
+### What if my NN never learns??
 
-Identification and justification of what went wrong and how you could potentially move forward.
+Identify and justify what went wrong and how you could potentially move forward.
 
 # Introduction to Soup of Terminology
 
@@ -48,7 +48,7 @@ Artificial Intelligence is a subset of computer science focused on creating syst
 
 ### Machine Learning
 
-Machine Learning is a subset of AI that involves the development of algorithms and models that allow computers to learn from data (e.g., automation, pattern recognition, and ``data-driven'').
+Machine Learning is a subset of AI that involves the development of algorithms and models that allow computers to learn from data (e.g., automation, pattern recognition, and "data-driven").
 
 ### Deep Learning
 
@@ -62,3 +62,11 @@ When you do not use machine learning, you typically rely on traditional programm
 - Traditional programs do not adapt or improve over time unless manually updated.
 - For complex tasks, creating explicit rules can be challenging and time-consuming.
   
+# Why are we all so excited about neural networks?
+
+Several recent advances have propelled us to our current environment of innovation in Deep Learning:
+
+- popularizing of graphics processing units (GPUs); NVIDIA in 1999
+- large high-quality and labeled datasets; ImageNet by Fei Fei Li in 2006
+- benchmarking competitions; ImageNet Large Scale Visual Recognition Challenge (ILSVRC) launched in 2010
+- open source software; 
