@@ -66,7 +66,10 @@ When you do not use machine learning, you typically rely on traditional programm
 
 Several recent advances have propelled us to our current environment of innovation in Deep Learning:
 
-- popularizing of graphics processing units (GPUs); NVIDIA in 1999
-- large high-quality and labeled datasets; ImageNet by Fei Fei Li in 2006
-- benchmarking competitions; ImageNet Large Scale Visual Recognition Challenge (ILSVRC) launched in 2010
-- open source software; 
+- popularizing of graphics processing units (GPUs), e.g., NVIDIA in 1999. GPU parallel processing power is particularly well-suited for training neural networks, which involve large-scale matrix operations. More recently, Google designed Tensor Processing Units (TPUs) as specialized hardware accelerators for machine learning tasks.
+- large high-quality and labeled datasets, e.g., [ImageNet](https://ieeexplore.ieee.org/document/5206848) led by Fei Fei Li in 2006.
+- benchmarking competitions, e.g., ImageNet Large Scale Visual Recognition Challenge ([ILSVRC](https://arxiv.org/abs/1409.0575)) launched in 2010.
+- advances in neural network architectures, e.g., convolutional and recurrent neural networks.
+- open source frameworks and software tools, e.g., [keras](https://keras.io/) and [pytorch](https://pytorch.org/).
+- cloud computing offers scalable resources for training and deploying neural networks, making these technologies accessible to a broader range of users and organizations.
+- real-world applications have demonstrated the effectiveness of neural networks in tasks like speech recognition and natural language processing, driving further interest.
