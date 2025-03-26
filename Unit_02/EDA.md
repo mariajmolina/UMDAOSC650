@@ -16,7 +16,7 @@ In your class project, how much time will typically be spent on data preparation
 
 The quality and size of your dataset will be much more impactful (in most cases) than the type of neural network you choose. A lot of time will be spent on data preprocessing, which is important to ensure that your neural network learns meaningful and true patterns.
 
-### What is your data type?
+# What is your data type?
 
 The nature of your "inputs" (i.e., predictors or x) and "labels" (i.e., predictand or y) can help give you an idea about what type of neural network you will need to use:
 
@@ -24,9 +24,7 @@ The nature of your "inputs" (i.e., predictors or x) and "labels" (i.e., predicta
 - Image-based (i.e., spatial region), e.g., convolutional neural network.
 - Temporal (i.e., time series), e.g., recurrent neural network.
 
----
-
-### Some questions to ask yourself about your data
+# Some questions to ask yourself about your data
 
 - How many features (i.e., variables) should I use?
   - When starting on a new project, focus on a few features that have strong predictive power
@@ -92,7 +90,7 @@ By using OOV, the system won't waste time training on each of those rare words.
 
 ---
 
-### Recommended Order of Operations:
+# Recommended Order of Operations:
 
 1. Filter or Fill Missing Values (e.g., imputation, interpolation)
 2. Product Harmonization or Alignment (for multi-product problems)
