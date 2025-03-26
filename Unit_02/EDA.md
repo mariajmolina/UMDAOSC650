@@ -102,6 +102,58 @@ By using OOV, the system won't waste time training on each of those rare words.
 8. Handle Outliers and Distribution Transformations (e.g., pruning, Box-Cox)
 9. Standardization or Normalization (e.g., z-score, min-max scaling)
 
+# Common data normalization, standardization, and transformations
+
+- Min-Max Normalization: Scales the data to a fixed range, usually [0, 1].
+
+$X' = \frac{X - X_{\min}}{X_{\max} - X_{\min}}$
+
+- Maximum Absolute Scaling: Rescales each feature by its maximum absolute value. It is useful for data that is already centered at zero.
+
+$X' = \frac{X}{\max(\lvert X \rvert)}$
+
+- Z-score Standardization: Standardizes the features by removing the mean and scaling to unit variance.
+
+$X' = \frac{X - \mu}{\sigma}$, where ( $\mu$ ) is the mean and ( $\sigma$ ) is the standard deviation of the feature.
+
+- Log Transformation: Reduces skewness in the data. It's applicable to data that follows a power law distribution.
+
+$X' = \log(X + c)$, where c is a constant added to avoid a value of zero.
+
+- Box-Cox Transformation: Used to stabilize variance and make the data more normally distributed.
+
+When ( $\lambda$ $\neq$ 0 ):
+
+$X' = \frac{X^{\lambda} - 1}{\lambda}$
+
+When ( $\lambda$ = 0 ):
+
+$X' = \log(X)$
+
+Where $\lambda$ is a parameter that needs to be estimated from the data. The goal is to find a value that makes the transformed data as close to normally distributed as possible.
+
+- Yeo-Johnson Transformation: Similar to Box-Cox but can handle zero and negative values.
+
+When ( $X$ $\geq$ 0 ) and ( $\lambda$ $\neq$ 0 ):
+
+$X' = \frac{((X + 1)^{\lambda} - 1)}{\lambda}$
+
+When ( $X$ $\geq$ 0 ) and ( $\lambda$ = 0 ):
+
+$X' = \log(X + 1)$
+
+When ( $X$ < 0 ) and ( $\lambda$ $\neq$ 2 ):
+
+$X' = -\frac{((-X + 1)^{2 - \lambda} - 1)}{2 - \lambda}$
+
+When ( $X$ < 0 ) and ( $\lambda$ = 2 ):
+
+$X' = -\log(-X + 1)$
+
+- Quantile Transformation: Transforms the data to follow a uniform or normal distribution.
+
+$X' = F^{-1}(F(X))$, where ( F ) is the cumulative distribution function (CDF) of the data and ( $F^{-1}$ ) is the inverse CDF of the desired distribution.
+
 ---
 
 Open source resource: [sklearn](https://scikit-learn.org/0.16/modules/preprocessing.html#preprocessing)
