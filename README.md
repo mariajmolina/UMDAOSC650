@@ -9,7 +9,7 @@ networks with specific relevance to the physical sciences.
 
 The course syllabus is available [here](https://docs.google.com/viewer?url=https://docs.google.com/document/d/1-sdX_Ngq0N21pWYkajzWeO2eLgn-sFBkEOLWvZ6-wQI/export?format=pdf).
 
-## Installing repository locally
+# Installing repository locally
 
 To use this repository for the course, fork your own copy of the repository.
 
@@ -30,3 +30,5 @@ Once installed, the python environment can be activated by running:
 To deactivate the python environment, run:
 
 ``conda deactivate``
+
+New to ``git``? [Here](https://git-scm.com/book/en/v2) is a useful open source resource.
