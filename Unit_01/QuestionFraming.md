@@ -73,3 +73,14 @@ Several recent advances have propelled us to our current environment of innovati
 - open source frameworks and software tools, e.g., [keras](https://keras.io/) and [pytorch](https://pytorch.org/).
 - cloud computing offers scalable resources for training and deploying neural networks, making these technologies accessible to a broader range of users and organizations.
 - real-world applications have demonstrated the effectiveness of neural networks in tasks like speech recognition and natural language processing, driving further interest.
+
+# Types of Prediction Tasks
+- Regression: When we want to predict the **value** of something. This is usually a continuous numeric range.
+- Classification: When we want to predict the **class** of something. This is usually a discrete category or class.
+
+# Types of Learning
+- Supervised Learning: We use it when we know the answers beforehand. These become our "labels."
+- Unsupervised Learning: We use it when we do not know the answers beforehand. There are no labels. This is useful for grouping data or dimensionality reduction.
+- Semi-supervised Learning: A technique that uses a small amount of labeled data along with a large amount of unlabeled data during the training process. It aims to improve learning performance by taking advantage of both types of data. First, one would train with labeled data, then clusters or pseudo-labels would be generated to continue training and refining the pretrained model.
+- Self-supervised Learning: A type of unsupervised learning in which the system learns to predict parts of the input data from other parts. It creates its own labels from the data itself, often by formulating auxiliary tasks.
+- Reinforcement Learning: A technique that relies on an agent learning to make decisions by interacting with an environment. The agent aims to maximize cumulative rewards through trial and error, adapting its strategy based on feedback from its actions. 
