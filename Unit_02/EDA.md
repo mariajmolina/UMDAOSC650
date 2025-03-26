@@ -88,8 +88,6 @@ By using OOV, the system won't waste time training on each of those rare words.
   - You can take a hybrid approach and combine hashing with a vocabulary. Use a vocabulary for the most important categories in your data, but replace the OOV bucket with multiple OOV buckets, and use hashing to assign categories to buckets.
   - An embedding layer is a learned transformation of your input data rather than a preprocessing step done beforehand. Instead of manually encoding categorical data (e.g., one-hot encoding), an embedding layer learns your input's dense, lower-dimensional representation during training.
 
----
-
 # Recommended Order of Operations:
 
 1. Filter or Fill Missing Values (e.g., imputation, interpolation)
