@@ -90,6 +90,22 @@ By using OOV, the system won't waste time training on each of those rare words.
   - You can take a hybrid approach and combine hashing with a vocabulary. Use a vocabulary for the most important categories in your data, but replace the OOV bucket with multiple OOV buckets, and use hashing to assign categories to buckets.
   - An embedding layer is a learned transformation of your input data rather than a preprocessing step done beforehand. Instead of manually encoding categorical data (e.g., one-hot encoding), an embedding layer learns your input's dense, lower-dimensional representation during training.
 
+---
+
+### Recommended Order of Operations:
+
+1. Filter or Fill Missing Values (e.g., imputation, interpolation)
+2. Product Harmonization or Alignment (for multi-product problems)
+3. Exploratory Data Analysis (e.g., autocorrelation, covariance, distribution)
+4. Label Creation for Classification (if relevant, e.g., integer or one-hot encoding)
+5. Train, Validation, and Test Data Split (including cross-validation strategy)
+6. Feature Selection (e.g., wrapper methods, feature extraction)
+7. Anomalies and Detrending (e.g., annual or seasonal, global or local)
+8. Handle Outliers and Distribution Transformations (e.g., pruning, Box-Cox)
+9. Standardization or Normalization (e.g., z-score, min-max scaling)
+
+---
+
 Open source resource: [sklearn](https://scikit-learn.org/0.16/modules/preprocessing.html#preprocessing)
 
  
