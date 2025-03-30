@@ -44,7 +44,24 @@ $\text{output} = \text{activation}(z)$
 
 ## What are neural network hyperparameters?
 
-Hyperparameters are parameters whose values are set (by a human) before starting the model training process.
+Hyperparameters are parameters whose values are set (by a human) before starting the model training process. The choice of hyperparameters can significantly affect the neural network's performance and efficiency. Hyperparameters can interact with each other in complex ways, making it challenging to find the optimal configuration.
+
+| Method    | Description |
+| -------- | ------- |
+| Data preprocessing | How you preprocess your data is important! |
+| Number of layers | Determines how deep the neural network is. More layers can potentially capture more complex patterns but may also lead to overfitting. |
+| Number of neurons per layer | Specifies how many neurons are in each layer. More neurons can increase the model's capacity to learn, but also increase computational complexity. |
+| Learning rate | Controls the rate of update/step size for weights during each iteration of backpropagation. Usually between 0.01 and 0.0001. A small learning rate can lead to a longer training time, while a large learning rate can cause the model to converge too quickly to a suboptimal solution. |
+| Batch size | Refers to the number of training examples utilized in one iteration. Smaller batch sizes can lead to noisier updates but may help generalization. |
+| Weight initialization | Method to initialize the weights. Can be zero, one, random... |
+| Activation function    | Function that calculates the output of a node based on the sum of the inputs times weights and bias. Can add nonlinearity. |
+| Loss function    | What error would you like your neural network to learn to minimize? |
+| Number of epochs| Defines how many times the learning algorithm will work through the entire training dataset. More epochs can improve learning, but may also increase the risk of overfitting. |
+| Dropout rate | Specifies the probability of dropping out neurons during training to prevent overfitting. |
+| Regularization coefficients | Add penalties to the loss function to discourage complex models (e.g., L1 or L2 regularization). |
+| Optimizer | Determines the algorithm used to update the weights, such as SGD (Stochastic Gradient Descent), Adam, or RMSprop. |
+
+Hyperparameter tuning is the process of finding the optimal set of hyperparameters that yield the best performance for a given model and dataset. This can be done through methods like grid search (i.e., exhaustively searching through a specified subset of hyperparameter space), random search (i.e., random search samples random combinations), or more advanced techniques like Bayesian optimization (i.e., models the hyperparameter space probabilistically). Hyperparameter tuning can be computationally expensive and time-consuming, especially for large models.
 
 ### Common Activation Functions
 
