@@ -2,11 +2,49 @@
 
 ### What is a fully connected artificial neural network (i.e., multilayer perceptron)?
 
-Artificial neural networks are machine learning models consisting of layers and neurons. The basic units are neurons (i.e., nodes), which are typically organized into layers.
+A fully connected neural network, also known as a dense neural network or multilayer perceptron, is one of the simplest types of artificial neural networks consisting of layers and neurons. It is characterized by the way its layers are structured and interconnected.
+
+A fully connected neural network typically consists of an input layer, one or more hidden layers, and an output layer. Each layer is composed of nodes, also known as neurons.
+
+In a fully connected network, every neuron in one layer is connected to every neuron in the subsequent layer. This means that each neuron receives inputs from all neurons in the previous layer and sends outputs to all neurons in the next layer.
+
+Fully connected networks can approximate any continuous function and are thus versatile for many tasks (e.g., regression or classification).
+
+They make a good starting point for beginners in deep learning because they are straightforward to implement.
+
+Fully connected neural networks do have some limitations. Due to the large number of connections, they can be computationally expensive and memory-intensive, especially as the number of neurons increases. They are also prone to overfitting, especially when the network is large and the amount of training data is limited. Techniques like dropout and regularization are often used to mitigate this issue.
 
 ### What is a neuron, and what math is involved?
 
+The basic units of neural networks are neurons (i.e., nodes), which are typically organized into layers. Neurons are the building blocks of neural networks, enabling complex computations and learning patterns from data. They are also responsible for processing and transmitting information within the network.
+
+Neurons receive multiple inputs, which are typically numerical values. These inputs can come from external data in the input layer or from other neurons in previous layers.
+
+Each input is associated with a weight. These weights are adjustable parameters that determine the strength or importance of each input in the calculation.
+
+A neuron may also have a bias term, which is an additional parameter added to the weighted sum of inputs. The bias allows the activation function to be shifted, providing more flexibility in learning.
+
+After computing the weighted sum (products of the features and weights) of inputs plus the bias, the neuron applies an activation function. This function introduces non-linearity and determines the neuron's output.
+
+Weights ($w_i$) and bias ($b$) terms are learned. Activation functions f(z) are not; they are “hyperparameters.”
+
+**Neuron in Math Form**
+
+1. Multiply feature(s) and weight(s)
+2. Take the sum of all the products of the features and weights
+3. Add bias term
+
+$z = \sum (w_i \cdot x_i) + b$
+
+Where ($w_i$) are the weights, ($x_i$) are the inputs, and ($b$) is the bias.
+
+4. Pass the signal through the activation function
+
+$\text{output} = \text{activation}(z)$
+
 ### What are neural network hyperparameters?
+
+Hyperparameters are parameters whose values are set (by a human) before starting the model training process.
 
 ### Common Activation Functions
 
