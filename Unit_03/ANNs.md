@@ -1,6 +1,6 @@
 # Artificial Neural Networks
 
-### What is a fully connected artificial neural network (i.e., multilayer perceptron)?
+## What is a fully connected artificial neural network (i.e., multilayer perceptron)?
 
 A fully connected neural network, also known as a dense neural network or multilayer perceptron, is one of the simplest types of artificial neural networks consisting of layers and neurons. It is characterized by the way its layers are structured and interconnected.
 
@@ -14,7 +14,7 @@ They make a good starting point for beginners in deep learning because they are 
 
 Fully connected neural networks do have some limitations. Due to the large number of connections, they can be computationally expensive and memory-intensive, especially as the number of neurons increases. They are also prone to overfitting, especially when the network is large and the amount of training data is limited. Techniques like dropout and regularization are often used to mitigate this issue.
 
-### What is a neuron, and what math is involved?
+## What is a neuron, and what math is involved?
 
 The basic units of neural networks are neurons (i.e., nodes), which are typically organized into layers. Neurons are the building blocks of neural networks, enabling complex computations and learning patterns from data. They are also responsible for processing and transmitting information within the network.
 
@@ -28,7 +28,7 @@ After computing the weighted sum (products of the features and weights) of input
 
 Weights ($w_i$) and bias ($b$) terms are learned. Activation functions f(z) are not; they are “hyperparameters.”
 
-**Neuron in Math Form**
+### Neuron in Math Form
 
 1. Multiply feature(s) and weight(s)
 2. Take the sum of all the products of the features and weights
@@ -42,7 +42,7 @@ Where ($w_i$) are the weights, ($x_i$) are the inputs, and ($b$) is the bias.
 
 $\text{output} = \text{activation}(z)$
 
-### What are neural network hyperparameters?
+## What are neural network hyperparameters?
 
 Hyperparameters are parameters whose values are set (by a human) before starting the model training process.
 
@@ -170,8 +170,8 @@ Where ( $\Phi$ ) is the cumulative distribution function (CDF) of the Gaussian d
 
 $f(x) = 0.5 x \left(1 + \tanh\left(\sqrt{\frac{2}{\pi}} \left(x + 0.044715 x^3\right)\right)\right)$
 
-### How do neurons learn?
+## How do neurons learn?
 
-### The bias-variance trade-off
+## The bias-variance trade-off
 
-### Troubleshooting training a neural network
+## Troubleshooting training a neural network
